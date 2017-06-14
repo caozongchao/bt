@@ -1,7 +1,7 @@
 <?php
 use frontend\helpers\FormatSizeHelper;
 
-$this->title = $data->name.'磁力搜索-bt搜索-磁力链接-迅雷下载_BTcc详情';
+$this->title = $data->name.'磁力搜索-bt搜索-磁力链接-迅雷下载_水熊BT详情';
 ?>
 <div class="container" style="padding-top:100px;">
     <div class="row">
@@ -47,7 +47,6 @@ $this->title = $data->name.'磁力搜索-bt搜索-磁力链接-迅雷下载_BTcc
                     <center>
                         <ul class="list-inline">
                             <li><i class="fa fa-download"></i> <a href="magnet:?xt=urn:btih:<?=$data->hash?>">磁力链接</a></li><br />
-                            <!-- <li><i class="fa fa-magnet fa-flip-vertical"></i> <span style="color:red">磁力链接无法下载或想永久保存种子文件，请加群联系管理员索取</span><br /><a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=439c2b7be50695c740fe0765727e513dc221fce9cc0e591b3e318e9589e775bc"><img border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="BTcc" title="BTcc"></a></li> -->
                         </ul>
                     </center>
                 </div>

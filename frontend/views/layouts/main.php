@@ -19,8 +19,8 @@ rmrevin\yii\fontawesome\AssetBundle::register($this);
 <head>
     <meta charset="<?= Yii::$app->charset ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="keywords" content="BTcc,bt搜索,磁力链接,迅雷下载,磁力搜索" />
-    <meta name="description" content="磁力链接搜索引擎BTcc（bt.vieway.com)索引了全球最新最热门的磁力链接，提供磁力搜索和bt搜索强大功能。" />
+    <meta name="keywords" content="水熊BT,bt搜索,磁力链接,迅雷下载,磁力搜索" />
+    <meta name="description" content="磁力链接搜索引擎水熊BT（bt.vieway.com)索引了全球最新最热门的磁力链接，提供磁力搜索和bt搜索强大功能。" />
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
@@ -58,7 +58,7 @@ body {
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?=Yii::$app->homeUrl?>">BTcc!</a>
+                <a class="navbar-brand" href="<?=Yii::$app->homeUrl?>">水熊BT</a>
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"></div>
         </div>

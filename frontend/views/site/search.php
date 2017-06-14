@@ -4,7 +4,7 @@ use yii\helpers\HtmlPurifier;
 use yii\helpers\Url;
 use frontend\helpers\FormatSizeHelper;
 use frontend\helpers\ColorHelper;
-$this->title = '磁力搜索-bt搜索-磁力链接-迅雷下载_BTcc搜索';
+$this->title = '磁力搜索-bt搜索-磁力链接-迅雷下载_水熊BT搜索';
 ?>
 <div class="container" style="padding-top:100px;">
     <div class="row">

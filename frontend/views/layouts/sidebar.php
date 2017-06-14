@@ -5,7 +5,7 @@ use yii\helpers\Url;
 <div class="col-md-4">
     <!-- Torrent search well -->
     <div class="well">
-        <h4>BTcc 搜索</h4>
+        <h4>水熊BT 搜索</h4>
         <form action="<?=Url::to(['site/search'])?>">
         <div class="input-group">
             <input type="text" class="form-control" name="k">

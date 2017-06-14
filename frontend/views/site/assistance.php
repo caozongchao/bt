@@ -2,13 +2,13 @@
 use yii\helpers\Url;
 /* @var $this yii\web\View */
 
-$this->title = '磁力搜索-bt搜索-磁力链接-迅雷下载_BTcc资助';
+$this->title = '磁力搜索-bt搜索-磁力链接-迅雷下载_水熊BT资助';
 ?>
 <div class="container" style="padding-top:60px; padding-bottom:50px; font-size:20px;">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
             <center><h2>资助</h2></center>
-            <p>十分感谢广大网友对BTcc的支持，我们会再接再励，努力回报朋友们的支持，谢谢！</p>
+            <p>十分感谢广大网友对水熊BT的支持，我们会再接再励，努力回报朋友们的支持，谢谢！</p>
             <p>
                 <div style="float:left">
                     <img src="/images/zfbsq.png" width="180"><br />

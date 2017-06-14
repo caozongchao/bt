@@ -2,7 +2,7 @@
 use yii\helpers\Url;
 /* @var $this yii\web\View */
 
-$this->title = '磁力搜索-bt搜索-磁力链接-迅雷下载_BTcc';
+$this->title = '磁力搜索-bt搜索-磁力链接-迅雷下载_水熊BT';
 ?>
 <div class="container" style="padding-top:100px;">
     <!-- <div class="row">
@@ -14,7 +14,7 @@ $this->title = '磁力搜索-bt搜索-磁力链接-迅雷下载_BTcc';
 
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h1>BTcc!</h1>
+            <h1>水熊BT!</h1>
             <p class="lead"></p>
         </div>
     </div>
