@@ -79,9 +79,12 @@ class SiteController extends Controller
         $cache = Yii::$app->cache;
         if ($cache->exists('total')) {
             $total = $cache->get('total');
+            $totalTime = $cache->get('totalTime');
         }else{
             $total = $connection->createCommand("select count(*) from info")->queryScalar();
+            $totalTime = date('Y-m-d H:i:s',time());
             $cache->set('total',$total,3600);
+            $cache->set('totalTime',date('H:i:s',time()),3600);
         }
         if ($cache->exists('today')) {
             $today = $cache->get('today');
@@ -89,7 +92,7 @@ class SiteController extends Controller
             $today = $connection->createCommand("select count(*) from info where time>='".$timeBegin."'")->queryScalar();
             $cache->set('today',$today,3600);
         }
-        return $this->render('index',['total' => $total,'today' => $today]);
+        return $this->render('index',['total' => $total,'today' => $today,'totalTime' => $totalTime]);
     }
 
     public function actionSearch()

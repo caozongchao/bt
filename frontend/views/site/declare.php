@@ -2,7 +2,7 @@
 use yii\helpers\Url;
 /* @var $this yii\web\View */
 
-$this->title = '免责声明-BTcc';
+$this->title = '磁力搜索-bt搜索-磁力链接-迅雷下载_BTcc免责声明';
 ?>
 <div class="container" style="padding-top:60px; padding-bottom:50px; font-size:18px;">
     <div class="row">

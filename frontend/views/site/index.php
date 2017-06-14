@@ -2,7 +2,7 @@
 use yii\helpers\Url;
 /* @var $this yii\web\View */
 
-$this->title = 'BTcc-磁力搜索';
+$this->title = '磁力搜索-bt搜索-磁力链接-迅雷下载_BTcc';
 ?>
 <div class="container" style="padding-top:100px;">
     <!-- <div class="row">
@@ -32,7 +32,7 @@ $this->title = 'BTcc-磁力搜索';
                         </button>
                     </span>
                 </div>
-                <div style="padding:10px 0px">从<?=number_format($total,0,',',' ')?>条数据中搜索，按小时更新显示，今日持续更新<?=number_format($today,0,',',' ')?></div>
+                <div style="padding:10px 0px">共<?=number_format($total,0,',',' ')?>条数据，上次更新时间<?=$totalTime?>，今日持续更新<?=number_format($today,0,',',' ')?></div>
                 <div style="padding:10px 0px">
                     热门搜索：
                     <a href="http://bt.vieway.cn/site/search?k=%E9%80%9F%E5%BA%A6%E4%B8%8E%E6%BF%80%E6%83%858">速度与激情8</a>&nbsp;&nbsp;
