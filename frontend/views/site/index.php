@@ -14,7 +14,7 @@ $this->title = '磁力搜索-bt搜索-磁力链接-迅雷下载_水熊BT';
 
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h1>水熊BT!</h1>
+            <h1>水熊BT</h1>
             <p class="lead"></p>
         </div>
     </div>
