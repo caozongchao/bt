@@ -36,8 +36,10 @@ $this->title = '磁力搜索-bt搜索-磁力链接-迅雷下载_BTcc';
                 <div style="padding:10px 0px">
                     热门搜索：
                     <a href="http://bt.vieway.cn/site/search?k=%E9%80%9F%E5%BA%A6%E4%B8%8E%E6%BF%80%E6%83%858">速度与激情8</a>&nbsp;&nbsp;
-                    <a href="http://bt.vieway.cn/site/search?k=%E6%91%94%E8%B7%A4%E5%90%A7%E7%88%B8%E7%88%B8">摔跤吧！爸爸</a>
-                    <a href="http://bt.vieway.cn/site/search?k=%E6%AC%A2%E4%B9%90%E9%A2%822">欢乐颂2</a>
+                    <a href="http://bt.vieway.cn/site/search?k=%E6%91%94%E8%B7%A4%E5%90%A7%E7%88%B8%E7%88%B8">摔跤吧！爸爸</a>&nbsp;&nbsp;
+                    <a href="http://bt.vieway.cn/site/search?k=%E6%AC%A2%E4%B9%90%E9%A2%822">欢乐颂2</a>&nbsp;&nbsp;
+                    <a href="http://bt.vieway.cn/site/search?k=%E4%BA%BA%E6%B0%91%E7%9A%84%E5%90%8D%E4%B9%89">人民的名义</a>&nbsp;&nbsp;
+                    <a href="http://bt.vieway.cn/site/search?k=tvb">tvb</a>
                 </div>
             </form>
         </div>

@@ -1,4 +1,4 @@
 */5 * * * * sync && echo 3 > /proc/sys/vm/drop_caches
-*/3 * * * * source /etc/profile && cd /root/p2pspider && /usr/bin/python /root/p2pspider/parse_torrent.py
-0 0 * * * /usr/local/coreseek/bt.sh
+*/5 * * * * source /etc/profile && cd /root/p2pspider && /usr/bin/python /root/p2pspider/parse_torrent.py
+0 0 * * * /usr/local/coreseek/bt.sh #2>&1 > /root/bt.error
 */5 * * * * /usr/local/coreseek/increment.sh
