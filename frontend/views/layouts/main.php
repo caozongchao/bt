@@ -33,6 +33,17 @@ var _hmt = _hmt || [];
   s.parentNode.insertBefore(hm, s);
 })();
 </script>
+<!-- <style type="text/css">
+body {
+    background: url('/images/bg.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+
+    height: 100%;
+}
+</style> -->
 </head>
 <body>
 <?php $this->beginBody() ?>
@@ -72,7 +83,9 @@ var jiathis_config={
 <!-- 分享代码 -->
 <script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"4","bdPos":"right","bdTop":"100"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
 <!-- admin5广告 -->
-<!-- <script src='http://slb.pcmzn.com/44587'></script> -->
+<script src='http://slb.pcmzn.com/44587'></script>
+<!-- 老榕树广告 -->
+<script src="http://wm.lrswl.com/page/?s=239616"></script>
 </body>
 </html>
 <?php $this->endPage() ?>
