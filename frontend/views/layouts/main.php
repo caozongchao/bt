@@ -85,7 +85,7 @@ var jiathis_config={
 <!-- admin5广告 -->
 <script src='http://slb.pcmzn.com/44587'></script>
 <!-- 老榕树广告 -->
-<script src="http://wm.lrswl.com/page/?s=239616"></script>
+<!-- <script src="http://wm.lrswl.com/page/?s=239616"></script> -->
 </body>
 </html>
 <?php $this->endPage() ?>
