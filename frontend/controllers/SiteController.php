@@ -82,7 +82,7 @@ class SiteController extends Controller
             $totalTime = $cache->get('totalTime');
         }else{
             $total = $connection->createCommand("select count(*) from info")->queryScalar();
-            $totalTime = date('Y-m-d H:i:s',time());
+            $totalTime = date('H:i:s',time());
             $cache->set('total',$total,3600);
             $cache->set('totalTime',date('H:i:s',time()),3600);
         }
