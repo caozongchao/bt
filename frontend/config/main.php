@@ -48,6 +48,8 @@ return [
             'showScriptName' => false,
             'rules' => [
                 'index.php' => '',
+                '<id:\d+>' => 'site/detail',
+                's' => 'site/search',
             ],
         ],
     ],
