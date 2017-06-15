@@ -51,6 +51,8 @@ return [
                 '<id:\d+>' => 'site/detail',
                 's' => 'site/search',
                 'new' => 'site/new',
+                'mzsm' => 'site/declare',
+                'zz' => 'site/assistance',
             ],
         ],
     ],

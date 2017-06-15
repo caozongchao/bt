@@ -4,21 +4,19 @@ use yii\helpers\Url;
 
 $this->title = '磁力搜索-bt搜索-磁力链接-迅雷下载_水熊BT';
 ?>
-<div class="container" style="padding-top:100px;">
-    <!-- <div class="row">
-        <center>
-            <img src="" class="img-rounded">
-        </center>
-    </div> -->
-    <!-- /.row -->
-
-    <div class="row">
+<div class="container" style="padding-top:70px;">
+    <div class="row" style="margin-bottom: 15px;">
         <div class="col-lg-12 text-center">
-            <h1>水熊BT</h1>
-            <p class="lead"></p>
+            <img src="/images/index1.png" class="img-rounded img-responsive center-block" style="width:300px;" alt="水熊BT">
         </div>
     </div>
-    <!-- /.row -->
+
+    <!-- <div class="row">
+        <div class="col-lg-12 text-center">
+            <h1>水熊BT</h1>
+            <p class="lead">你想搜的这都有</p>
+        </div>
+    </div> -->
 
     <div class="row">
         <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>
