@@ -50,6 +50,7 @@ return [
                 'index.php' => '',
                 '<id:\d+>' => 'site/detail',
                 's' => 'site/search',
+                'new' => 'site/new',
             ],
         ],
     ],

@@ -9,6 +9,7 @@ use yii\bootstrap\NavBar;
 use yii\widgets\Breadcrumbs;
 use frontend\assets\AppAsset;
 use common\widgets\Alert;
+use yii\helpers\Url;
 
 AppAsset::register($this);
 rmrevin\yii\fontawesome\AssetBundle::register($this);
@@ -60,7 +61,11 @@ body {
                 </button>
                 <a class="navbar-brand" href="<?=Yii::$app->homeUrl?>">水熊BT</a>
             </div>
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"></div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="<?=Url::to(['site/new'])?>">最新收录</a></li>
+                </ul>
+            </div>
         </div>
     </nav>
     <?=$content;?>

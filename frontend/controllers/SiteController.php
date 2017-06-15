@@ -156,6 +156,17 @@ class SiteController extends Controller
         return $this->render('detail',['data' => $data,'type' => $type]);
     }
 
+    public function actionNew()
+    {
+        $cache = Yii::$app->cache;
+        $pageSize = 50;
+        $query = Info::find()->orderBy(['id' => SORT_DESC]);
+        $count = $cache->get('total');
+        $pagination = new Pagination(['totalCount' => $count,'pageSize' => $pageSize]);
+        $datas = $query->offset($pagination->offset)->limit($pagination->limit)->all();
+        return $this->render('new',['pagination' => $pagination,'datas' => $datas]);
+    }
+
     public function actionDeclare()
     {
         return $this->render('declare');
