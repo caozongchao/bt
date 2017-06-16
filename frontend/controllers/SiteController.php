@@ -14,6 +14,7 @@ use frontend\models\SignupForm;
 use frontend\models\ContactForm;
 use common\models\Info;
 use yii\data\Pagination;
+use common\models\Keyword;
 
 /**
  * Site controller
@@ -107,7 +108,7 @@ class SiteController extends Controller
             Yii::$app->session->setFlash('error','请输入搜索内容');
             return $this->redirect(['site/index']);
         }
-
+        Keyword::add($key);
         $sphinx = new \SphinxClient();
         $sphinx->SetServer ('localhost',9312);
         $sphinx->SetArrayResult (true);
