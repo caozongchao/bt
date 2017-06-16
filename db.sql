@@ -150,7 +150,7 @@ CREATE TABLE `info` (
   UNIQUE KEY `uni_hash` (`hash`),
   KEY `name` (`name`(255)),
   KEY `hash` (`hash`)
-) ENGINE=InnoDB AUTO_INCREMENT=163362 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=163703 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -168,7 +168,7 @@ CREATE TABLE `keyword` (
   `today` int(11) NOT NULL DEFAULT '0',
   PRIMARY KEY (`id`),
   KEY `key_index` (`keyword`(20))
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=8 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -227,4 +227,4 @@ CREATE TABLE `sphinx_temp_id` (
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2017-06-16 14:55:33
+-- Dump completed on 2017-06-16 15:49:03
