@@ -98,17 +98,17 @@ class SiteController extends Controller
 
     public function actionSearch()
     {
-        $pageSize = 20;
-        $currentPage = Yii::$app->request->get('page');
-        if (!isset($currentPage)) {
-            $currentPage = 1;
-        }
         $key = Yii::$app->request->get('k');
         if (!$key) {
             Yii::$app->session->setFlash('error','请输入搜索内容');
             return $this->redirect(['site/index']);
         }
-        Keyword::add($key);
+        $pageSize = 20;
+        $currentPage = Yii::$app->request->get('page');
+        if (!isset($currentPage)) {
+            Keyword::add($key);
+            $currentPage = 1;
+        }
         $sphinx = new \SphinxClient();
         $sphinx->SetServer ('localhost',9312);
         $sphinx->SetArrayResult (true);
