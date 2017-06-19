@@ -23,6 +23,7 @@ rmrevin\yii\fontawesome\AssetBundle::register($this);
     <meta name="keywords" content="水熊BT,bt搜索,磁力链接,迅雷下载,磁力搜索" />
     <meta name="description" content="磁力链接搜索引擎水熊BT（bt.vieway.com)索引了全球最新最热门的磁力链接，提供磁力搜索和bt搜索强大功能。" />
     <meta id="sohu_tv_union_verify" content="xHes6_z-IjO36CQ4XQSwDLeJZRcvjuU_"/>
+    <meta name="360-site-verification" content="b7b71c38bdf9b236db2a65dadf1497cc" />
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
