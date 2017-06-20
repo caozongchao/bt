@@ -1,6 +1,7 @@
 <?php
 
 namespace common\models;
+use yii\helpers\StringHelper;
 
 use Yii;
 
@@ -51,6 +52,12 @@ class Keyword extends \yii\db\ActiveRecord
 
     public static function add($key)
     {
+        if (trim($key) == '') {
+            return false;
+        }
+        if (StringHelper::startsWith($key,'?')) {
+            return false;
+        }
         $keyInfo = self::find()->where(['keyword' => $key])->one();
         if (!$keyInfo) {
             $model = new self();
