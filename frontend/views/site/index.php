@@ -13,8 +13,8 @@ $this->title = '磁力搜索-bt搜索-磁力链接-迅雷下载_水熊BT';
 
     <div class="row">
         <div class="col-lg-12 text-center">
-            <h1>水熊BT</h1>
-            <!-- <p class="lead">你想搜的这都有</p> -->
+            <h2>水熊BT</h2>
+            <p class="lead"><small>你想搜的这儿都有</small></p>
         </div>
     </div>
 
@@ -38,15 +38,6 @@ $this->title = '磁力搜索-bt搜索-磁力链接-迅雷下载_水熊BT';
                     <a href="http://bt.vieway.cn/s?k=%E6%AC%A2%E4%B9%90%E9%A2%822">欢乐颂2</a>&nbsp;&nbsp;
                     <a href="http://bt.vieway.cn/s?k=%E4%BA%BA%E6%B0%91%E7%9A%84%E5%90%8D%E4%B9%89">人民的名义</a>&nbsp;&nbsp;
                     <a href="http://bt.vieway.cn/s?k=tvb">tvb</a>
-                </div>
-                <div style="padding:10px 0px 0px 0px">
-                    最新收录：<br />
-                    <?php foreach ($latest5 as $latest): ?>
-                        <a href="http://bt.vieway.cn/<?=$latest['id']?>"><?=$latest['name']?></a>
-                        <?php if ($latest != end($latest5)): ?>
-                            <br />
-                        <?php endif ?>
-                    <?php endforeach ?>
                 </div>
             </form>
         </div>
