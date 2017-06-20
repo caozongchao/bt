@@ -65,7 +65,7 @@ body {
             </div>
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav">
-                    <li><a href="<?=Url::to(['site/new'])?>">最新收录</a></li>
+                    <li><a href="<?=Url::to(['site/new'])?>">收录库</a></li>
                 </ul>
             </div>
         </div>

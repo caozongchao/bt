@@ -12,11 +12,11 @@ use yii\helpers\Url;
                     <li><a href="http://www.vieway.cn" target="_blank">科学上网</a></li>
                 </ul>
             </center>
-            <center>
+            <!-- <center>
                 <p>
                     Template by <a href="http://tiagoanleite.github.io">Tiago Leite</a>
                 </p>
-            </center>
+            </center> -->
         </div>
     </footer>
 </div>

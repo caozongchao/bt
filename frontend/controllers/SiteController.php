@@ -78,6 +78,7 @@ class SiteController extends Controller
         $connection = \Yii::$app->db;
         $timeBegin = date('Y-m-d',time());
         $cache = Yii::$app->cache;
+        // $cache->flush();die;
         if ($cache->exists('total')) {
             $total = $cache->get('total');
             $totalTime = $cache->get('totalTime');
@@ -93,7 +94,13 @@ class SiteController extends Controller
             $today = $connection->createCommand("select count(*) from info where time>='".$timeBegin."'")->queryScalar();
             $cache->set('today',$today,3600);
         }
-        return $this->render('index',['total' => $total,'today' => $today,'totalTime' => $totalTime]);
+        if ($cache->exists('latest5')) {
+            $latest5 = $cache->get('latest5');
+        }else{
+            $latest5 = $connection->createCommand("select id,name from info order by id desc limit 5")->queryAll();
+            $cache->set('latest5',$latest5,3600);
+        }
+        return $this->render('index',['total' => $total,'today' => $today,'totalTime' => $totalTime,'latest5' => $latest5]);
     }
 
     public function actionSearch()

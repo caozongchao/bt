@@ -1,7 +1,7 @@
 <?php
 use yii\helpers\Url;
 ?>
-<div class="jumbotron" style="margin-bottom:0px;">
+<div class="jumbotron" style="margin-bottom:0px; height: 160px;">
     <div class="container">
         <div class="row">
             <center>
