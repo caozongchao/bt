@@ -8,6 +8,10 @@ use backend\models\TopicSearch;
 use yii\web\Controller;
 use yii\web\NotFoundHttpException;
 use yii\filters\VerbFilter;
+use yii\web\UploadedFile;
+use yii\helpers\FileHelper;
+use yii\imagine\Image;
+use Imagine\Image\ManipulatorInterface;
 
 /**
  * TopicController implements the CRUD actions for Topic model.
@@ -120,5 +124,32 @@ class TopicController extends Controller
         } else {
             throw new NotFoundHttpException('The requested page does not exist.');
         }
+    }
+
+    public function actionUpload()
+    {
+        $model = new Topic();
+
+        $imageFile = UploadedFile::getInstance($model, 'img');
+
+        $directory = Yii::getAlias('@frontend/web/uploads/thumb').DIRECTORY_SEPARATOR.date('Ymd').DIRECTORY_SEPARATOR;
+        if (!is_dir($directory)) {
+            FileHelper::createDirectory($directory);
+        }
+
+        if ($imageFile) {
+            $uid = uniqid(time(), true);
+            $fileName = date('Ymd').rand(10000,99999).'.'.$imageFile->extension;
+            $filePath = $directory . $fileName;
+            if ($imageFile->saveAs($filePath)) {
+                $thumbName = 'thumb_'.$fileName;
+                $thumbPath = $directory.'thumb_'.$fileName;
+                Image::thumbnail($filePath,250,160,ManipulatorInterface::THUMBNAIL_OUTBOUND)->save($thumbPath);
+                unlink($filePath);
+                return json_encode(['name' => 'http://images.vieway.cn/thumb/'.date('Ymd').'/'.$thumbName]);
+            }
+        }
+
+        return 'error';
     }
 }
