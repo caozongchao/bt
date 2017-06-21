@@ -53,6 +53,8 @@ return [
                 'new' => 'site/new',
                 'mzsm' => 'site/declare',
                 'zz' => 'site/assistance',
+                't' => 'topic/index',
+                't/<id:\d+>' => 'topic/detail',
             ],
         ],
     ],

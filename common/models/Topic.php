@@ -29,11 +29,11 @@ class Topic extends \yii\db\ActiveRecord
     public function rules()
     {
         return [
-            [['name', 'content', 'img'], 'required'],
+            [['name', 'content'], 'required'],
+            [['img'], 'required','on' => 'new'],
             [['content'], 'string'],
             [['click'], 'integer'],
             [['name'], 'string', 'max' => 50],
-            [['img'], 'string', 'max' => 200],
         ];
     }
 

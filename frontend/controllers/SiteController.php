@@ -94,13 +94,13 @@ class SiteController extends Controller
             $today = $connection->createCommand("select count(*) from info where time>='".$timeBegin."'")->queryScalar();
             $cache->set('today',$today,3600);
         }
-        // if ($cache->exists('latest5')) {
-        //     $latest5 = $cache->get('latest5');
-        // }else{
-        //     $latest5 = $connection->createCommand("select id,name from info order by id desc limit 5")->queryAll();
-        //     $cache->set('latest5',$latest5,3600);
-        // }
-        return $this->render('index',['total' => $total,'today' => $today,'totalTime' => $totalTime]);
+        if ($cache->exists('topicNew1')) {
+            $topicNew1 = $cache->get('topicNew1');
+        }else{
+            $topicNew1 = $connection->createCommand("select id,name from topic order by id desc limit 1")->queryAll();
+            $cache->set('topicNew1',$topicNew1,3600);
+        }
+        return $this->render('index',['total' => $total,'today' => $today,'totalTime' => $totalTime,'topicNew1' => $topicNew1]);
     }
 
     public function actionSearch()

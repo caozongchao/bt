@@ -39,6 +39,12 @@ $this->title = '磁力搜索-bt搜索-磁力链接-迅雷下载_水熊BT';
                     <a href="http://bt.vieway.cn/s?k=%E4%BA%BA%E6%B0%91%E7%9A%84%E5%90%8D%E4%B9%89">人民的名义</a>&nbsp;&nbsp;
                     <a href="http://bt.vieway.cn/s?k=tvb">tvb</a>
                 </div>
+                <div style="padding:10px 0px 0px 0px">
+                    最新专题：
+                    <?php foreach ($topicNew1 as $topicNew): ?>
+                        <a href="http://bt.vieway.cn/t/<?=$topicNew['id']?>"><?=$topicNew['name']?></a>
+                    <?php endforeach ?>
+                </div>
             </form>
         </div>
         <div class="col-xs-1 col-sm-1 col-md-1 col-lg-1"></div>

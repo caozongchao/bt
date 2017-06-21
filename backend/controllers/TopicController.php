@@ -68,8 +68,11 @@ class TopicController extends Controller
     public function actionCreate()
     {
         $model = new Topic();
+        $model->setScenario('new');
 
-        if ($model->load(Yii::$app->request->post()) && $model->save()) {
+        if ($model->load(Yii::$app->request->post())) {
+            $model->img = $_POST['img'];
+            $model->save();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {
             return $this->render('create', [
@@ -144,7 +147,7 @@ class TopicController extends Controller
             if ($imageFile->saveAs($filePath)) {
                 $thumbName = 'thumb_'.$fileName;
                 $thumbPath = $directory.'thumb_'.$fileName;
-                Image::thumbnail($filePath,250,160,ManipulatorInterface::THUMBNAIL_OUTBOUND)->save($thumbPath);
+                Image::thumbnail($filePath,300,190,ManipulatorInterface::THUMBNAIL_OUTBOUND)->save($thumbPath);
                 unlink($filePath);
                 return json_encode(['name' => 'http://images.vieway.cn/thumb/'.date('Ymd').'/'.$thumbName]);
             }

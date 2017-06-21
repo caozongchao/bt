@@ -52,9 +52,11 @@ use dosamigos\fileupload\FileUpload;
         // ],
     // ]);
     ?>
+    <b>上传缩略图</b><br />
     <?= FileUpload::widget([
-        'model' => $model,
-        'attribute' => 'img',
+        'name' => 'Topic[img]',
+        // 'model' => $model,
+        // 'attribute' => 'img',
         'url' => ['topic/upload'], // your url, this is just for demo purposes,
         'options' => ['accept' => 'image/*'],
         'clientOptions' => [
@@ -65,8 +67,9 @@ use dosamigos\fileupload\FileUpload;
         'clientEvents' => [
             'fileuploaddone' => 'function(e, data) {
                 result = eval("("+data.result+")");
-                console.log(result);
-                $("input[name=\'Topic[img]\']").val(result.name);
+                // console.log(result);
+                $("#topicImg").val(result.name);
+                alert("上传成功");
             }',
             'fileuploadfail' => 'function(e, data) {
                 console.log(e);
@@ -74,7 +77,7 @@ use dosamigos\fileupload\FileUpload;
             }',
         ],
     ]); ?>
-
+    <input type="hidden" id="topicImg" name="img">
     <?= $form->field($model, 'click')->textInput() ?>
 
     <div class="form-group">
