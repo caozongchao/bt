@@ -21,25 +21,29 @@ $this->title = $data->name.'磁力搜索-bt搜索-磁力链接-迅雷下载_水�
                             <br>
                             <dl class="dl-horizontal">
                                 <dt>大小</dt>
-                                <dd><?=FormatSizeHelper::formatBytes($data->size)?></dd>
+                                <dd><span class="badge"><?=FormatSizeHelper::formatBytes($data->size)?></span></dd>
                                 <dt>文件数</dt>
-                                <dd><?=$data->num?></dd>
+                                <dd><span class="badge"><?=$data->num?></span></dd>
                                 <dt>收录时间</dt>
-                                <dd><?=$data->time?></dd>
+                                <dd><span class="badge"><?=$data->time?></span></dd>
                                 <dt>索引类型</dt>
-                                <dd><?=$type?></dd>
+                                <dd><span class="badge"><?=$type?></span></dd>
                             </dl>
                         </div>
                     </div>
                     <br>
                     <div class="row">
                         <div class="col-lg-12">
-                            <p style="color:red">只显示文件列表中最大的前10个文件</p>
-                            <?php $files = explode('@||@',$data->files) ?>
-                            <?php foreach ($files as $key => $value): ?>
-                                <?php $array = explode('$||$',$value); ?>
-                                <p><?=$array[0]?>…………<span style="color:red"><?=FormatSizeHelper::formatBytes($array[1])?></span></p>
-                            <?php endforeach ?>
+                            <div class="panel panel-default">
+                                <div class="panel-heading">只显示文件列表中最大的前10个文件</div>
+                                <div class="panel-body">
+                                    <?php $files = explode('@||@',$data->files) ?>
+                                    <?php foreach ($files as $key => $value): ?>
+                                        <?php $array = explode('$||$',$value); ?>
+                                        <p><?=$array[0]?>  <span class="badge"><?=FormatSizeHelper::formatBytes($array[1])?></span></p>
+                                    <?php endforeach ?>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>

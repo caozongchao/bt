@@ -20,12 +20,12 @@ $this->title = '磁力搜索-bt搜索-磁力链接-迅雷下载_水熊BT搜索';
                             <a href="" rel="author" data-original-title="" title=""><img class="media-object" src="" alt=""></a>
                         </div> -->
                         <div class="media-body" style="padding-bottom:5px; border-bottom:1px solid #dddddd;">
-                            <div class="media-heading" style="font-size:16px;"><a href="<?=Url::to(['site/detail','id' => $value->id])?>"><?=ColorHelper::red($value->name,$k)?> </a><small><i class="fa fa-file"></i> <?=$value->num?></small></div>
+                            <div class="media-heading" style="font-size:16px;"><a href="<?=Url::to(['site/detail','id' => $value->id])?>"><?=ColorHelper::red($value->name,$k)?> </a><small><i class="fa fa-file"></i> <span class="badge"><?=$value->num?></span></small></div>
                             <div class="media-action">
-                                <i class="fa fa-clock-o fa-fw"></i> 收录时间：<?=$value->time?>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <i class="fa fa-database fa-fw"></i> 大小：<?=FormatSizeHelper::formatBytes($value->size)?>&nbsp;&nbsp;&nbsp;&nbsp;
+                                <i class="fa fa-clock-o fa-fw"></i> 收录时间：<?=$value->time?>
+                                <i class="fa fa-database fa-fw"></i> 大小：<span class="badge"><?=FormatSizeHelper::formatBytes($value->size)?></span>
                                 <i class="fa fa-download fw"></i> <a href="<?=Url::to(['site/detail','id' => $value->id])?>">磁力链接</a>&nbsp;&nbsp;&nbsp;&nbsp;
-                                <i class="fa fa-eye fw"></i> 热度：<?=$value->hot?>
+                                <i class="fa fa-eye fw"></i> 热度：<span class="badge"><?=$value->hot?></span>
                             </div>
                         </div>
                         <!-- <div class="media-right">
