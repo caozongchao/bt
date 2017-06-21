@@ -15,3 +15,8 @@ $this->title = $data->name.'磁力搜索-bt搜索-磁力链接-迅雷下载_水�
     </div>
 </div>
 <?php echo \Yii::$app->view->renderFile('@frontend/views/layouts/footer1.php'); ?>
+<script type="text/javascript">
+$(function() {
+    $("img").addClass("img-responsive");
+});
+</script>
