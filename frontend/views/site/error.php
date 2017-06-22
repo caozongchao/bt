@@ -2,8 +2,6 @@
 use yii\helpers\Url;
 use yii\helpers\Html;
 /* @var $this yii\web\View */
-
-$this->title = '磁力搜索-bt搜索-磁力链接-迅雷下载_水熊BT'.$name;
 ?>
 <div class="container" style="padding-top:120px; padding-bottom:50px; font-size:18px;">
     <div class="row">

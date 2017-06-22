@@ -1,7 +1,7 @@
 <?php
 use frontend\helpers\FormatSizeHelper;
 
-$this->title = $data->name.'磁力搜索-bt搜索-磁力链接-迅雷下载_水熊BT详情';
+$this->title = $data->name.'_水熊BT';
 ?>
 <div class="container" style="padding-top:100px;">
     <div class="row">
