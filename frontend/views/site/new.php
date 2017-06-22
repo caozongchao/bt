@@ -19,9 +19,9 @@ $this->title = '磁力搜索-bt搜索-磁力链接-迅雷下载_水熊BT最新�
                             <a href="" rel="author" data-original-title="" title=""><img class="media-object" src="" alt=""></a>
                         </div> -->
                         <div class="media-body" style="padding-bottom:5px; border-bottom:1px solid #dddddd;">
-                            <div class="media-heading" style="font-size:16px;"><a href="<?=Url::to(['site/detail','id' => $value->id])?>"><?=$value->name?> </a><small><i class="fa fa-file"></i> <span class="badge" style="background-color: #FFCC99"><?=$value->num?></span></small></div>
+                            <div class="media-heading" style="font-size:16px;"><a href="<?=Url::to(['site/detail','id' => $value->id])?>"><?=$value->name?> </a><small><i class="fa fa-file"></i> <span class="badge" style="background-color: #99CC33"><?=$value->num?></span></small></div>
                             <div class="media-action">
-                                <i class="fa fa-clock-o fa-fw"></i> <span class="badge" style="background-color: #FFCCCC"><?=$value->time?></span>
+                                <i class="fa fa-clock-o fa-fw"></i> <span class="badge" style="background-color: #FFCC99"><?=$value->time?></span>
                                 <i class="fa fa-database fa-fw"></i> <span class="badge" style="background-color: #99CCFF"><?=FormatSizeHelper::formatBytes($value->size)?></span>
                                 <i class="fa fa-eye fw"></i> <span class="badge" style="background-color: #FF9999"><?=$value->hot?></span>&nbsp;&nbsp;&nbsp;&nbsp;
                                 <i class="fa fa-download fw"></i> <a href="<?=Url::to(['site/detail','id' => $value->id])?>">磁力链接</a>

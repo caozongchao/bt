@@ -23,9 +23,9 @@ $this->title = $data->name.'磁力搜索-bt搜索-磁力链接-迅雷下载_水�
                                 <dt>大小</dt>
                                 <dd><span class="badge" style="background-color: #99CCFF"><?=FormatSizeHelper::formatBytes($data->size)?></span></dd>
                                 <dt>文件数</dt>
-                                <dd><span class="badge" style="background-color: #FFCC99"><?=$data->num?></span></dd>
+                                <dd><span class="badge" style="background-color: #99CC33"><?=$data->num?></span></dd>
                                 <dt>收录时间</dt>
-                                <dd><span class="badge" style="background-color: #FFCCCC"><?=$data->time?></span></dd>
+                                <dd><span class="badge" style="background-color: #FFCC99"><?=$data->time?></span></dd>
                                 <dt>索引类型</dt>
                                 <dd><span class="badge" style="background-color: #FF9999"><?=$type?></span></dd>
                             </dl>
@@ -40,7 +40,7 @@ $this->title = $data->name.'磁力搜索-bt搜索-磁力链接-迅雷下载_水�
                                     <?php $files = explode('@||@',$data->files) ?>
                                     <?php foreach ($files as $key => $value): ?>
                                         <?php $array = explode('$||$',$value); ?>
-                                        <p><?=$array[0]?>  <span class="badge" style="background-color: #FF9999"><?=FormatSizeHelper::formatBytes($array[1])?></span></p>
+                                        <p><?=$array[0]?>  <span class="badge" style="background-color: #99CCFF"><?=FormatSizeHelper::formatBytes($array[1])?></span></p>
                                     <?php endforeach ?>
                                 </div>
                             </div>
