@@ -90,9 +90,13 @@ class TopicController extends Controller
     public function actionUpdate($id)
     {
         $model = $this->findModel($id);
+        $model1 = clone $model;
 
         if ($model->load(Yii::$app->request->post())) {
             $model->img = $_POST['img'];
+            if($model->img == ''){
+                $model->img = $model1->img;
+            }
             $model->save();
             return $this->redirect(['view', 'id' => $model->id]);
         } else {

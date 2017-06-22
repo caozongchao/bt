@@ -69,7 +69,7 @@ use dosamigos\fileupload\FileUpload;
                 result = eval("("+data.result+")");
                 // console.log(result);
                 $("#topicImg").val(result.name);
-                alert("上传成功");
+                $("#topicImg").after("<div style=\"color:#ff0000\"><b>上传成功</b><div>");
             }',
             'fileuploadfail' => 'function(e, data) {
                 console.log(e);
