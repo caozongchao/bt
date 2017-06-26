@@ -9,9 +9,9 @@ var pa = fs.readdirSync('torrents')
 var mysql = require("mysql");
 var pool = mysql.createPool({
     host: 'localhost',
-    user: 'root',
-    password: 'root',
-    database: 'p2p',
+    user: '******',
+    password: '******',
+    database: '******',
     charset: 'utf8',
 });
 
