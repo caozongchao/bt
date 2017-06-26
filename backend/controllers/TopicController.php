@@ -155,7 +155,7 @@ class TopicController extends Controller
                 $thumbPath = $directory.'thumb_'.$fileName;
                 Image::thumbnail($filePath,300,190,ManipulatorInterface::THUMBNAIL_OUTBOUND)->save($thumbPath);
                 unlink($filePath);
-                return json_encode(['name' => 'http://images.vieway.cn/thumb/'.date('Ymd').'/'.$thumbName]);
+                return json_encode(['name' => 'http://images.bt.yssousuo.com/thumb/'.date('Ymd').'/'.$thumbName]);
             }
         }
 

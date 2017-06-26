@@ -7,9 +7,8 @@ use yii\helpers\Url;
         <div class="container">
             <center>
                 <ul class="list-inline">
-                    <li><a href="http://bt.vieway.cn" target="_blank">磁力搜索</a></li>
-                    <li><a href="http://bt.vieway.cn" target="_blank">BT搜索</a></li>
-                    <li><a href="http://www.vieway.cn" target="_blank">科学上网</a></li>
+                    <li><a href="http://bt.yssousuo.com" target="_blank">磁力搜索</a></li>
+                    <li><a href="http://bt.yssousuo.com" target="_blank">BT搜索</a></li>
                 </ul>
             </center>
             <!-- <center>

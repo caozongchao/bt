@@ -11,7 +11,7 @@ use yii\helpers\Html;
             </div>
             <p>服务器处理请求时发生错误</p>
             <p>请联系管理员，谢谢。</p>
-            <p><a href="http://bt.vieway.cn">返回首页</a></p>
+            <p><a href="/">返回首页</a></p>
         </div>
     </div> <!-- /.row -->
 </div>

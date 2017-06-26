@@ -5,7 +5,7 @@ return [
         'redactor' => [
             'class' => 'common\components\RedactorModule',
             'uploadDir' => '@frontend/web/uploads',
-            'uploadUrl' => 'http://images.vieway.cn',
+            'uploadUrl' => 'http://images.bt.yssousuo.com',
             'imageAllowExtensions'=>['jpg','png','gif']
         ],
     ],

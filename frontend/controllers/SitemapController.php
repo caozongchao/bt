@@ -21,14 +21,14 @@ class SitemapController extends Controller
         for ($i = 1; $i <= $count; $i++) {
             $offset = ($i-1) * $pageSize;
             $ids = $db->createCommand("select id from info order by id desc limit $offset,$pageSize")->queryColumn();
-            $summaryContent .= "<loc>http://bt.vieway.cn/sitemap$i.xml</loc>\n";
+            $summaryContent .= "<loc>http://bt.yssousuo.com/sitemap$i.xml</loc>\n";
             $summaryContent .= "<lastmod>$date</lastmod>\n";
             $detailHandle = fopen("sitemap$i.xml",'w+');
             $detailBegin = "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<?xml-stylesheet type=\"text/xsl\" href=\"sitemap.xsl\"?>\n<urlset xmlns=\"http://www.sitemaps.org/schemas/sitemap/0.9\" xmlns:mobile=\"http://www.baidu.com/schemas/sitemap-mobile/1/\">\n";
             $detailEnd = "</urlset>";
             $detailContent = '';
             foreach ($ids as $id) {
-                $detailContent .= "<url>\n<mobile:mobile type=\"htmladapt\"/>\n<loc>http://bt.vieway.cn/$id</loc>\n<priority>0.80</priority>\n<lastmod>$date</lastmod>\n<changefreq>Always</changefreq>\n</url>\n";
+                $detailContent .= "<url>\n<mobile:mobile type=\"htmladapt\"/>\n<loc>http://bt.yssousuo.com/$id</loc>\n<priority>0.80</priority>\n<lastmod>$date</lastmod>\n<changefreq>Always</changefreq>\n</url>\n";
             }
             fwrite($detailHandle, $detailBegin.$detailContent.$detailEnd);
             fclose($detailHandle);
@@ -48,7 +48,7 @@ class SitemapController extends Controller
         $detailEnd = "</urlset>";
         $detailContent = '';
         foreach ($ids as $id) {
-            $detailContent .= "<url>\n<mobile:mobile type=\"htmladapt\"/>\n<loc>http://bt.vieway.cn/t/$id</loc>\n<priority>0.80</priority>\n<lastmod>$date</lastmod>\n<changefreq>Always</changefreq>\n</url>\n";
+            $detailContent .= "<url>\n<mobile:mobile type=\"htmladapt\"/>\n<loc>http://bt.yssousuo.com/t/$id</loc>\n<priority>0.80</priority>\n<lastmod>$date</lastmod>\n<changefreq>Always</changefreq>\n</url>\n";
         }
         fwrite($detailHandle, $detailBegin.$detailContent.$detailEnd);
         fclose($detailHandle);

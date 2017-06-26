@@ -22,8 +22,6 @@ rmrevin\yii\fontawesome\AssetBundle::register($this);
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="水熊BT,bt搜索,磁力链接,迅雷下载,磁力搜索" />
     <meta name="description" content="磁力链接搜索引擎水熊BT（bt.vieway.com)索引了全球最新最热门的磁力链接，提供磁力搜索和bt搜索强大功能。" />
-    <meta id="sohu_tv_union_verify" content="xHes6_z-IjO36CQ4XQSwDLeJZRcvjuU_"/>
-    <meta name="360-site-verification" content="b7b71c38bdf9b236db2a65dadf1497cc" />
     <?= Html::csrfMetaTags() ?>
     <title><?= Html::encode($this->title) ?></title>
     <?php $this->head() ?>
@@ -87,13 +85,6 @@ var jiathis_config={
 </script>
 <!-- <script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?btn=r.gif&move=1" charset="utf-8"></script> -->
 <!-- JiaThis Button END -->
-
-<!-- 分享代码 -->
-<script>window._bd_share_config={"common":{"bdSnsKey":{},"bdText":"","bdMini":"1","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"16"},"slide":{"type":"slide","bdImg":"4","bdPos":"right","bdTop":"100"},"selectShare":{"bdContainerClass":null,"bdSelectMiniList":["qzone","tsina","tqq","renren","weixin"]}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];</script>
-<!-- admin5广告 -->
-<script src='http://slb.pcmzn.com/44587'></script>
-<!-- 老榕树广告 -->
-<!-- <script src="http://wm.lrswl.com/page/?s=239616"></script> -->
 </body>
 </html>
 <?php $this->endPage() ?>
